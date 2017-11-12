@@ -17,7 +17,7 @@ def fib(n)
 end
 
 if ARGV[0] == nil then
-  STDERR.puts "Usage: #$0 <num>"
+  STDERR.puts "Usage: #{__FILE__} <num>"
 else
   puts fib(ARGV[0].to_i)
 end
