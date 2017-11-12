@@ -14,7 +14,7 @@ def gdc(x, y)
 end
 
 if ARGV[0] == nil || ARGV[1] == nil then
-  puts "ERROR: usage: #$0 <num1> <num2>"
+  STDERR.puts "Usage: #$0 <num1> <num2>"
 else
   puts gdc(ARGV[0].to_i, ARGV[1].to_i)
 end

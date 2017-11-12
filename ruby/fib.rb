@@ -17,7 +17,7 @@ def fib(n)
 end
 
 if ARGV[0] == nil then
-  puts "ERROR: usage: #$0 <num>"
+  STDERR.puts "Usage: #$0 <num>"
 else
   puts fib(ARGV[0].to_i)
 end
