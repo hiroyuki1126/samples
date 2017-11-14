@@ -6,14 +6,14 @@
 #   gdc.rb <num1> <num2>
 
 def gdc(x, y)
-  if y == 0 then
+  if y == 0
     return x
   else
     return gdc(y, x % y)
   end
 end
 
-if ARGV[0] == nil || ARGV[1] == nil then
+if ARGV[0] == nil || ARGV[1] == nil
   STDERR.puts "Usage: #{__FILE__} <num1> <num2>"
 else
   puts gdc(ARGV[0].to_i, ARGV[1].to_i)
