@@ -3,13 +3,13 @@
 def gen_random_str(mode = :mode3, str_len = 8)
   case mode
   when :mode1
-    o = [('a'..'z')].map { |i| i.to_a }.flatten
+    pattern = [('a'..'z')].map { |i| i.to_a }.flatten
   when :mode2
-    o = [('a'..'z'), ('A'..'Z')].map { |i| i.to_a }.flatten
+    pattern = [('a'..'z'), ('A'..'Z')].map { |i| i.to_a }.flatten
   when :mode3
-    o = [('a'..'z'), ('A'..'Z'), ('0'..'9')].map { |i| i.to_a }.flatten
+    pattern = [('a'..'z'), ('A'..'Z'), ('0'..'9')].map { |i| i.to_a }.flatten
   end
-  return (0...str_len).map { o[rand(o.length)] }.join
+  return (0...str_len).map { pattern[rand(pattern.length)] }.join
 end
 
 puts 'ランダム文字列（mode3, 8文字）'
