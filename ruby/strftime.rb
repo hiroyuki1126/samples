@@ -2,4 +2,5 @@
 
 require 'date'
 
-puts Time.now.strftime('%Y%m%d_%H%M%S')
+method = %q{Time.now.strftime('%Y%m%d_%H%M%S')}
+puts method +  ' => ' + eval(method)
