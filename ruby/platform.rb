@@ -2,11 +2,11 @@
 
 case RUBY_PLATFORM
 when /x86_64-darwin17/
-  puts 'This machine is macOS.'
-when /i386-mingw32/
-  puts 'This machine is Windows.'
+  puts 'The OS of this machine is macOS.'
 when /x86_64-linux/
-  puts 'This machine is Linux.'
+  puts 'The OS of this machine is Linux.'
+when /i386-mingw32/
+  puts 'The OS of this machine is Windows.'
 else
-  puts 'This machine is unknown.'
+  puts 'The OS of this machine is unknown.'
 end
