@@ -10,5 +10,5 @@ end
 puts '"年月日_時分秒"を取得する。'
 puts Time.now.strftime('%Y%m%d_%H%M%S')
 
-puts '日時を含めてメッセージを出力する。'
+puts '日時を付加してメッセージを出力する。'
 print_message 'hello, world'
