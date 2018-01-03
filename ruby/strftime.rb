@@ -1,9 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'date'
-
 def print_message(msg)
-  now = DateTime.now.strftime('%Y/%m/%d %H:%M:%S')
+  now = Time.now.strftime('%Y/%m/%d %H:%M:%S')
   STDERR.puts "[#{now}] #{msg}"
 end
 
