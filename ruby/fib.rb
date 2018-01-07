@@ -16,7 +16,7 @@ def fib(n)
   end
 end
 
-if ARGV[0] == nil
+unless ARGV.size == 1
   STDERR.puts "ERROR: Usage: #{__FILE__} <num>"
 else
   puts fib(ARGV[0].to_i)

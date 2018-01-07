@@ -13,7 +13,7 @@ def gdc(x, y)
   end
 end
 
-if ARGV[0] == nil || ARGV[1] == nil
+unless ARGV.size == 2
   STDERR.puts "ERROR: Usage: #{__FILE__} <num1> <num2>"
 else
   puts gdc(ARGV[0].to_i, ARGV[1].to_i)
